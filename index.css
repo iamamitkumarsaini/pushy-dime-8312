@@ -1,63 +1,226 @@
-body{
-    margin: 0px;
-}
-
-#navbar{
+#heading{
     display: flex;
-    width: 100%;
-    height: 70px;
-    align-items: center;
-    margin: auto;
-    position: sticky;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-#navbar>div:first-child{
-    width: 14%;
-    margin: auto;
-    margin: 0px 30px;
+    width: auto;
+    height: auto;
+    margin-top: 135px;
+    margin-bottom: 40px;
 }
 
+#heading>div:first-child{
+    width: 27%;
+    height: 54%;
+    margin: auto;
+    margin-right:0px;
+    margin-left: 8%;
+}
 
- #navbar>div:first-child>img{
-    width: 100%;
+#heading>div>h2{
+    font-size: 48px;
+    font-family: "Google Sans",Arial, sans-serif;
+    color: #3C4043;
+    margin-top: 0px;
+    font-weight: lighter;
+}
+
+#heading>div>p{
+    font-size: 18px;
+    color: #424242;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#heading>div:last-child{
+    width: 40%;
+    height: 54%;
+    border: 1px solid orange;
+    margin: auto;
+    margin-left: 0px;
+}
+
+#findCourse{
+    font-family: "Google Sans",Arial, sans-serif;
+    padding: 13px 24px;
+    border: none;
+    background-color: #1A73E8;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 130px;
+}
+
+#cLogo{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#cLogo>div:first-child>p{
+    margin-top: 0px;
+    color: #424242;
+    font-family:"Google Sans",Arial, sans-serif ;
+}
+
+#cLogo>div:last-child{
+    width: 55%;
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 10px;
     
 }
 
-#navbar>div:nth-child(2){
+#cLogo>div:last-child>div{
     display: flex;
-    width: 36%;
-    justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 18px;
+    height: auto;
+    align-items: center;
 }
 
-
- #navbar>div>a{
-text-decoration: none;
-color: gray;
+#cLogo>div:last-child>div>img{
+    width: 80%;
+    
 }
 
-#navbar>:last-child{
+#cLogo>div:last-child>div:nth-child(3)>img{
+    width: 60%;
+}
+
+#middlebar{
     display: flex;
-    width: 14%;
-    height: 75%;
-    margin-left:28%;
-    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: #1A73E8;
+    border: 1px solid #1A73E8;
+    padding: 29px 0px;
+    margin-bottom: 40px;
+    
 }
 
-#signUpBtn{
-    padding: 4px 30px;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:#1a73e8;
-    border: none;
+#middlebar>div{
+    display: flex;
+    width: 85%;
+    height: 120px;
+    margin: auto;
+    align-items: center;
+}
+
+
+
+#middlebar>div>div:first-child{
+display: flex;
+width: 70px;
+height: 70px;
+align-items: center;
+background-color: white;
+border-radius: 50%;
+
+}
+
+#middlebar>div:first-child>div>img{
+margin-left: 20px;
+}
+
+#middlebar>div>div:nth-child(2){
+    width: 50%;
+    margin-left: 40px;
+
+}
+
+#middlebar>div>div:nth-child(2)>h3{
     color: white;
+    font-size: 35px;
+    font-family:"Google Sans",Arial, sans-serif;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
 }
 
-#signInBtn{
-    background: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color:#1a73e8;
-    border: none;
+#middlebar>div>div:nth-child(2)>p{
+    color: white;
+    font-family:"Google Sans",Arial, sans-serif;
+    font-weight: lighter;
+
+}
+
+
+
+#middlebar>div>div:last-child{
+    width: 45%;
+    height:120px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#webinarCourses{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family:"Google Sans",Arial, sans-serif;
     font-size: 18px;
-} */
+    letter-spacing: 1px;
+}
+
+#courseCategories>div{
+    width: 70%;
+    height: auto;
+    border: 1px solid red;
+    margin: auto;
+    
+}
+
+#courseCategories>div>h1{
+    font-size: 40px;
+    font-weight: lighter;
+    color: #3C4043;
+    font-family:"Google Sans",Arial, sans-serif;
+    text-align: center;
+}
+
+#courseCategories>div:first-child>p{
+    color: #424242;
+    font-family:"Google Sans",Arial, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px 162px;
+    margin-bottom: 50px;
+    line-height: 32px;
+}
+
+#courseCategories>div:last-child{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    gap: 20px;
+
+}
+
+#courseCategories>div:last-child>div{
+    border: 1px solid blue;
+    padding: 32px 18px;
+}
+
+#courseCategories>div:last-child>div>p:nth-child(2){
+    font-size: 18px;
+    color: #3C4043;
+    font-weight: bold;
+    font-family:"Google Sans",Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+#courseCategories>div:last-child>div>p:nth-child(3){
+    font-size: 16px;
+    color: #424242;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 24px;
+}
+
+#courseCategories>div:last-child>div>p:nth-child(4){
+    font-size: 20px;
+    color: #1A73E8;
+    text-align: right;
+    margin: auto;
+    
+}
+
+
+
+
