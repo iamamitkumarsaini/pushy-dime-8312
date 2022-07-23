@@ -11,7 +11,9 @@ body{
     position: sticky;
     top: 0px;
     margin-bottom: 0px;
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    z-index: 1;
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 #navbar>div:first-child{
     width: 14%;
@@ -150,4 +152,3 @@ font-family: "Google Sans",Arial, sans-serif;
 #socialmediaicon>div>div>img{
     width: 100%;
 }
-
