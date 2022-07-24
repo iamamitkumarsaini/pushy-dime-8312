@@ -1,0 +1,406 @@
+#header{
+    width: 100%;
+    height: auto;
+}
+
+#header>div{
+    width: 51%;
+    margin: auto;
+    margin-left: 7.6%; 
+}
+
+#header>div>h1{
+    font-size: 40px;
+    font-weight: lighter;
+    color: #3c4043;
+    font-family: "Google Sans",Arial, sans-serif;
+    margin-top: 50px;
+}
+
+#header>div>p{
+    font-size: 18px;
+    font-weight: lighter;
+    color: #80868b;
+    font-family: "Google Sans",Arial, sans-serif;
+    margin-top: -22px;
+    line-height: 29px;
+    margin-bottom: 65px;
+}
+
+body>div:nth-child(3){
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: rgba(192,192,192,0.2);
+    background-color: rgba(192,192,192,0.2);
+    
+}
+
+#leftContainer{
+    width: 17%;
+    height: auto;
+    border: 1px solid rgba(192,192,192,0.2);;
+    justify-content: left;
+    margin-left: 9%;
+    margin-right: 2.5%;
+    margin-top: 50px;
+}
+
+#leftcontainer>div{
+    margin: auto;
+}
+ 
+#leftContainer>div>h3:first-child{
+    font-weight: lighter;
+    font-family: "Google Sans",Arial, sans-serif;
+    font-size: 14px;
+    color: #000000DE;
+    
+    font-weight: 600;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    
+}
+
+#leftContainer>div>h3{
+    font-weight: lighter;
+    font-family: "Google Sans",Arial, sans-serif;
+    font-size: 14px;
+    color: #000000DE;
+    margin-left: 30px;
+}
+
+#categories{
+    margin-bottom: 115px;
+}
+
+
+#categories>.commondiv{
+    display: flex;
+    height: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#courseLength{
+    margin-bottom: 100px;
+}
+
+#courseLength>.commondiv{
+    display: flex;
+    height: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#Certification{
+    margin-bottom: 100px;
+}
+
+#Certification>.commondiv{
+    display: flex;
+    height: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#courseDifficulty{
+margin-bottom: 90px;
+}
+
+#courseDifficulty>.commondiv{
+    display: flex;
+    height: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#courseProvider>.commondiv{
+    display: flex;
+    height: 30px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.inputdiv{
+    height: 20px;
+    width: 22px;
+    margin-right: 24px;   
+}
+.labeldiv{
+    width: 80%;
+    color: #80868b;
+    font-family: "Google Sans",Arial, sans-serif;
+    height: 20px;
+    margin-top: 4px;   
+}
+
+#courseProvider>div:nth-child(5){
+    height: auto;
+}
+#courseProvider>div:nth-child(5)>div:nth-child(2){
+    height: auto;
+}
+
+#courseProvider>div:nth-child(7){
+    height: auto;
+}
+#courseProvider>div:nth-child(7)>div:nth-child(2){
+    height: auto;
+}
+
+
+#courseProvider>div:nth-child(12){
+    height: auto;
+}
+#courseProvider>div:nth-child(12)>div:nth-child(2){
+    height: auto;
+}
+
+.inputdiv>input{
+    height: 100%;
+    width: 100%;
+    border: 3px solid #80868b;
+}
+
+body>div:nth-child(3)>h3{
+    width: 15%;
+    height: 40px;
+    color: #3c4043;
+    font-family: "Google Sans",Arial, sans-serif;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+
+#rightContainer{
+    display: grid;
+    margin-top: 90px;
+    width: 62%;
+    height:auto;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-left: -230px;
+}
+
+#rightContainer>div{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: white;
+    height: 400px;
+    position: relative;
+}
+
+#rightContainer>div:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#rightContainer>div>div>h3{
+    margin-left: 24px;
+    margin-right: 20px;
+    color: #3c4043;
+    font-family: "Google Sans",Arial, sans-serif;
+}
+
+#rightContainer>div>div>h3+p{
+    margin-left: 24px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: #5f6368;
+    font-family: "Google Sans",Arial, sans-serif;
+    font-size: 14px;
+}
+
+#rightContainer>div>div>img{
+    width: 100%;
+    
+}
+
+#rightContainer>div>div:nth-child(2){
+    width: 100%;
+    display: flex;
+    height: 15px;
+    margin: auto;
+    margin-top: 15px;
+    justify-content:start;
+    color: #5f6368;
+    font-family: "Google Sans",Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 100px;
+
+}
+
+#rightContainer>div>div:nth-child(2)>p{
+    margin-top: -2px;
+    margin-left: 35px;
+}
+
+#rightContainer>div>h4{
+    display: flex;
+    color: #1a73e8;
+    font-size: 24px;
+    margin-top: -5px;
+    position: absolute;
+    bottom: -10px;
+    left: 85%;
+}
+
+hr{
+    color: #3c4043;
+    border: 1px solid #3c4043;
+}
+
+#resetformat{
+    color: #1a73e8;
+    font-family: "Google Sans",Arial, sans-serif;
+    margin-left: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#resetformat:hover{
+    cursor: pointer;
+}
+
+
+@media all and (min-width:320px) and (max-width:480px){
+    #header>div{
+        width: 100%;
+        margin-left: 30px; 
+    }
+    
+    #header>div>h1{
+        font-size: 28px;
+    }
+
+   
+
+    #leftContainer{
+        width: 40%;
+        height: auto;
+        border: 1px solid rgba(192,192,192,0.2);;
+        justify-content: left;
+        margin-left: 0px;
+        margin-right:10px;
+        margin-top: 50px;
+    }
+    
+    #leftcontainer>div{
+        margin: auto;
+    }
+     
+    #leftContainer>div>h3:first-child{
+        font-weight: lighter;
+        font-family: "Google Sans",Arial, sans-serif;
+        font-size: 14px;
+        color: #000000DE;
+        
+        font-weight: 600;
+        margin-left: 10px;
+        margin-bottom: 40px;
+        
+    }
+    
+    #leftContainer>div>h3{
+        font-weight: lighter;
+        font-family: "Google Sans",Arial, sans-serif;
+        font-size: 14px;
+        color: #000000DE;
+        margin-left: 30px;
+    }
+
+    #rightContainer{
+        display: grid;
+        margin-top: 110px;
+        width: 50%;
+        height:auto;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        margin-left: -200px;
+        margin-right: 0px;
+    }
+    body>div:nth-child(3)>h3{
+        width: 90%;
+        height: 30px;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+
+    #rightContainer>div{
+        width: 110%;
+    }
+  
+}
+
+
+@media all and (min-width:481px) and (max-width:768px){
+    #header>div{
+        width: 100%;
+        margin-left: 30px; 
+    }
+    
+    #header>div>h1{
+        font-size: 28px;
+    }
+
+   
+
+    #leftContainer{
+        width: 40%;
+        height: auto;
+        border: 1px solid rgba(192,192,192,0.2);;
+        justify-content: left;
+        margin-left: 0px;
+        margin-right:10px;
+        margin-top: 50px;
+    }
+    
+    #leftcontainer>div{
+        margin: auto;
+    }
+     
+    #leftContainer>div>h3:first-child{
+        font-weight: lighter;
+        font-family: "Google Sans",Arial, sans-serif;
+        font-size: 14px;
+        color: #000000DE;
+        
+        font-weight: 600;
+        margin-left: 10px;
+        margin-bottom: 40px;
+        
+    }
+    
+    #leftContainer>div>h3{
+        font-weight: lighter;
+        font-family: "Google Sans",Arial, sans-serif;
+        font-size: 14px;
+        color: #000000DE;
+        margin-left: 30px;
+    }
+
+    #rightContainer{
+        width: 50%;
+        display: grid;
+        margin-top: 120px;
+        margin-right: 110px;
+        
+        height:auto;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        border: 1px solid red;
+    }
+    body>div:nth-child(3)>h3{
+        width: 90%;
+        height: 30px;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+
+    #rightContainer>div{
+        width: 110%;
+    }
+  
+}
+
+
+
