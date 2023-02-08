@@ -1,5 +1,5 @@
 # Google Digital Garage Clone
-This Website is a clone of Google Digital Garage Website by Google.
+This Website is a clone of Google Digital Garage Website by Google.  
 ```The free online learning platform which delivers a full digital skills courses on it's platform.```
 
 ### Description
