@@ -46,5 +46,5 @@ From the Log In Page users can access their account and start learning. Users ne
 <p align="center">That's All for this Website</p>
 
 ```
-                                                                  Thanks You for Visiting this Project
+                                                  Thanks You for Visiting this Project
 ```
