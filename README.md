@@ -1,6 +1,6 @@
 # Google Digital Garage Clone
-This Website is a clone of Google Digital Garage Website by Google.\n
-The free online learning platform which delivers a full digital skills courses on it's platform.
+This Website is a clone of Google Digital Garage Website by Google.
+```The free online learning platform which delivers a full digital skills courses on it's platform.```
 
 ### Description
 Google Digital Garage is an online learning platform provided by Google to help individuals and organizations develop their digital skills.
