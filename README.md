@@ -17,3 +17,7 @@ The goal of Google Digital Garage is to provide access to digital skills trainin
 ```
 This Website is build by me, in 4 days of time duration.
 ```
+
+### Homepage
+![Homepage](https://user-images.githubusercontent.com/107475338/217622836-76ba1895-bf94-4f16-a551-6f709150e2d4.png)
+
