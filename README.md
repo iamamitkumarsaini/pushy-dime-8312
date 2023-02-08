@@ -23,14 +23,17 @@ The home page is the entry point for users to access free digital skills trainin
 ![Homepage](https://user-images.githubusercontent.com/107475338/217626299-fa2c2ee3-5617-4455-9378-0a4b4f524d08.png)
 
 
+
 ### CoursePage
 On the Course Page users can access the specific details and resources related to each course offered on the platform. It provides information such as the course content, prerequisites, duration, and how users can complete the course, including any assessments and certifications.
 ![Coursepage](https://user-images.githubusercontent.com/107475338/217626329-49a1885c-17c6-4cbf-b4b7-484a7678044e.png)
 
 
+
 ### Sign-Up Page
 On the Sign Up Page new users can create an account to access the platform's courses and resources. It typically requires users to provide basic personal information, such as their email address, and create a password to log in to their account. The sign-up process is usually straightforward and simple, and allows users to start learning and developing their digital skills immediately
 ![Signup Page](https://user-images.githubusercontent.com/107475338/217626361-63eaa89c-93a7-4371-bae9-e3f6c8454671.png)
+
 
 
 ### Log-In Page
