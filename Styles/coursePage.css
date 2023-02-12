@@ -262,4 +262,145 @@ hr{
 }
 
 
+@media all and (min-width:320px) and (max-width:480px){
+    #header>div{
+        width: 100%;
+        margin-left: 30px; 
+    }
+    
+    #header>div>h1{
+        font-size: 28px;
+    }
+
+   
+
+    #leftContainer{
+        width: 40%;
+        height: auto;
+        border: 1px solid rgba(192,192,192,0.2);;
+        justify-content: left;
+        margin-left: 0px;
+        margin-right:10px;
+        margin-top: 50px;
+    }
+    
+    #leftcontainer>div{
+        margin: auto;
+    }
+     
+    #leftContainer>div>h3:first-child{
+        font-weight: lighter;
+        font-family: "Google Sans",Arial, sans-serif;
+        font-size: 14px;
+        color: #000000DE;
+        
+        font-weight: 600;
+        margin-left: 10px;
+        margin-bottom: 40px;
+        
+    }
+    
+    #leftContainer>div>h3{
+        font-weight: lighter;
+        font-family: "Google Sans",Arial, sans-serif;
+        font-size: 14px;
+        color: #000000DE;
+        margin-left: 30px;
+    }
+
+    #rightContainer{
+        display: grid;
+        margin-top: 110px;
+        width: 50%;
+        height:auto;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        margin-left: -200px;
+        margin-right: 0px;
+    }
+    body>div:nth-child(3)>h3{
+        width: 90%;
+        height: 30px;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+
+    #rightContainer>div{
+        width: 110%;
+    }
+  
+}
+
+
+@media all and (min-width:481px) and (max-width:768px){
+    #header>div{
+        width: 100%;
+        margin-left: 30px; 
+    }
+    
+    #header>div>h1{
+        font-size: 28px;
+    }
+
+   
+
+    #leftContainer{
+        width: 40%;
+        height: auto;
+        border: 1px solid rgba(192,192,192,0.2);;
+        justify-content: left;
+        margin-left: 0px;
+        margin-right:10px;
+        margin-top: 50px;
+    }
+    
+    #leftcontainer>div{
+        margin: auto;
+    }
+     
+    #leftContainer>div>h3:first-child{
+        font-weight: lighter;
+        font-family: "Google Sans",Arial, sans-serif;
+        font-size: 14px;
+        color: #000000DE;
+        
+        font-weight: 600;
+        margin-left: 10px;
+        margin-bottom: 40px;
+        
+    }
+    
+    #leftContainer>div>h3{
+        font-weight: lighter;
+        font-family: "Google Sans",Arial, sans-serif;
+        font-size: 14px;
+        color: #000000DE;
+        margin-left: 30px;
+    }
+
+    #rightContainer{
+        width: 50%;
+        display: grid;
+        margin-top: 120px;
+        margin-right: 110px;
+        
+        height:auto;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        border: 1px solid red;
+    }
+    body>div:nth-child(3)>h3{
+        width: 90%;
+        height: 30px;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+
+    #rightContainer>div{
+        width: 110%;
+    }
+  
+}
+
+
 

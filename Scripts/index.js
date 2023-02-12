@@ -10,3 +10,9 @@ document.getElementById("navbarSigninBtn").addEventListener("click",navbarSignin
 function navbarSigninFunc(){
     window.location.href = "signinPage.html"
 };
+
+document.querySelector("#findCourse").addEventListener("click",btnFunc)
+
+function btnFunc (){
+    window.location.href = "coursePage.html"
+};

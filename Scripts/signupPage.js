@@ -33,7 +33,6 @@ function signUpFunction(){
 
 
   if (signupObj["mail"] == ""  || signupObj["password"] == "" ){
-    document.getElementById("continueBtn").disabled = true;
     alert("Fill all the input fields")
     return;
   }  
