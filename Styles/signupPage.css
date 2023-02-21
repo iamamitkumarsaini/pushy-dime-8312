@@ -22,7 +22,7 @@
     color: #5f6368;
 }
 
-body>div:nth-child(3){
+#containerBox{
     width: 100%;
     height: 605px;
     position:relative;
@@ -58,6 +58,7 @@ body>div:nth-child(3){
     justify-content: space-evenly;
     letter-spacing: 1px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #googleBtn>img{
@@ -89,6 +90,23 @@ body>div:nth-child(3){
     font-size: 16px;
     border: none;
     border-bottom: 1px solid gray;
+}
+
+#eyeicon1{
+    font-size: 16px;
+    position: absolute;
+    top: 296px;
+    left: 64%;
+    cursor: pointer;
+}
+
+#eyeicon2{
+    display: none;
+    position: absolute;
+    top: 296px;
+    left: 64%;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 #container>p{

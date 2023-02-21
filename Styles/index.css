@@ -37,7 +37,8 @@
 }
 
 #heading>div:last-child>img{
-width: 100%;
+    width: 100%;
+
 }
 
 #findCourse{
@@ -53,6 +54,7 @@ width: 100%;
 
 #findCourse:hover{
 background-color:darkblue;
+cursor: pointer;
 }
 
 #cLogo{
@@ -92,7 +94,7 @@ background-color:darkblue;
 
 #middlebar{
     display: flex;
-    width: 100%;
+    width: 99.7%;
     height: auto;
     background-color: #1A73E8;
     border: 1px solid #1A73E8;
@@ -174,8 +176,7 @@ margin-left: 20px;
 #courseCategories>div{
     width: 70%;
     height: auto;
-    margin: auto;
-    
+    margin: auto;    
 }
 
 #courseCategories>div>h1{
@@ -208,6 +209,7 @@ margin-left: 20px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border-radius: 8px;
     padding: 32px 18px;
+    cursor: pointer;
 }
 
 #courseCategories>div:last-child>div>p:nth-child(2){
@@ -282,17 +284,17 @@ margin-left: 20px;
 }
 
 #exploreBtn:hover{
-background-color: #1967D2;
-color: whitesmoke;
+    background-color: #1967D2;
+    color: whitesmoke;
+    cursor: pointer;
 }
 
 #faq_questions{
-width: 100%;
-height: auto;
-margin: auto;
-text-align: center;
-margin-bottom: 80px;
-margin-top: 70px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 70px;
 }
 #faq_questions>h2{
     text-align: center;
@@ -308,12 +310,26 @@ margin-top: 70px;
     margin-bottom: 40px;
 }
 
-#faq_questions>div>div{
+.questions{
+    cursor: pointer;
+}
+
+.q_icons{
+    display: none;
+}
+
+#faq_questions>div>div>div:first-child{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: auto;
+    height: 40px;
     margin: auto;
+    align-items: center;
+}
+
+#faq_questions>div>div>div>p{
+    text-align: left;
+    margin-top: 18px;
 }
 
 hr{
@@ -341,6 +357,12 @@ letter-spacing: 1px;
 
 #faqBtn:hover{
     color: #1967D2;
+    cursor: pointer;
+}
+
+.fa-solid{
+    font-size: 24px;
+    color: #1a73e8;
 }
 
 
