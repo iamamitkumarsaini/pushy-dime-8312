@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration - Google Digital Garage</title>
+    <script src="https://kit.fontawesome.com/97af42fa79.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Styles/navbar.css">
     <link rel="stylesheet" href="Styles/signupPage.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google Sans">
@@ -12,23 +13,51 @@
 <body>
 
     <div id="navbar">
-        <div>
-            <img id="navbarImage" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="">
+        
+        <div id="nav1">
+             <img id="navbarImage1" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="">
+ 
+             <a href="coursePage.html">Online Courses</a>
+             <a href="#">Certification</a>
+             <a href="#">More</a>
         </div>
-
-        <div>
-            <a href="coursePage.html">Online Courses</a>
-            <a href="#">Certification</a>
-            <a href="#">Live Training</a>
-            <a href="#">Remote Working</a>
-            <a href="#">More</a>
-        </div>
-
-        <div>
-            <button id="navbarSigninBtn">Sign in</button>
-            <button id="navbarSignupBtn">Register</button>
-        </div>
-    </div>
+ 
+         <div>
+             <button id="navbarSigninBtn1" class="navbarSigninBtn">Sign in</button>
+             <button id="navbarSignupBtn1" class="navbarSignupBtn">Register</button>
+         </div>
+     </div>
+ 
+     <div id="ssNavbar">
+       <div>
+         <div>
+             <i id="menuIcon" class="fa-solid fa-bars"></i>
+             <img id="navbarImage2" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="">
+         </div>
+         <div>
+             <button id="navbarSigninBtn2" class="navbarSigninBtn">Sign in</button>
+             <button id="navbarSignupBtn2" class="navbarSignupBtn">Register</button>
+         </div>
+       </div>
+     </div>
+ 
+     <div id="menuItems">
+         <div><img id="navbarImage3" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt=""></div>
+         <div>
+             <h3><a href="coursePage.html">Online Courses</a></h3>
+             <h3><a href="#">Certification</a></h3>
+             <h3><a href="#">Live Training</a></h3>
+             <h3><a href="#">Remote Working</a></h3>
+             <h3><a href="#">Tools & Resources</a></h3>
+             <h3><a href="#">Help & FAQs</a></h3>
+             <h3><a href="#">Feedback</a></h3>
+         </div>
+ 
+         <div>
+             <button id="navbarSigninBtn3" class="navbarSigninBtn">Sign in</button><br>
+             <button id="navbarSignupBtn3" class="navbarSignupBtn">Register</button>
+         </div>
+     </div>
 
     <div id="heading">
         <div>
@@ -37,7 +66,7 @@
     </div>
     </div>
 
-    <div>
+    <div id="containerBox">
     <div id="container">
         <button type="button" id="googleBtn"><img src="https://learndigital.withgoogle.com/static/digital-workshop/assets/icons/google-button-g.png" alt=""> <span>Register with Google</span></button>
 
@@ -45,7 +74,11 @@
 
         <form>
             <input type="email" name="" id="signinmail" placeholder="Email"><br>
-            <input type="password" name="" id="signinpassword" placeholder="Choose a password*">
+            <div>
+                <input type="password" name="" id="signinpassword" placeholder="Choose a password*">
+                <i id="eyeicon1" class="fa-solid fa-eye"></i>
+                <i id="eyeicon2" class="fa-sharp fa-solid fa-eye-slash"></i>
+            </div>
         </form>
             
         
@@ -54,7 +87,7 @@
 
     <div id="bottompart">
         <p>Alreday have an acoount? <a href="signinPage.html">Sign in.</a></p>
-        <button type="submit" id="continueBtn">Continue</button>
+        <button type="submit" id="continueBtn" disabled>Continue</button>
     </div>
 
     </div>
@@ -100,6 +133,7 @@
     </footer>
 </body>
 
+<script src="Scripts/navbar.js"></script>
 <script src="Scripts/signupPage.js"></script>
 
 </html>

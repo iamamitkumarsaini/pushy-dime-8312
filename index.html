@@ -7,28 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Digital Skills with Free Training</title>
     <link rel="stylesheet" href="Styles/navbar.css">
+    <script src="https://kit.fontawesome.com/97af42fa79.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href= "Styles/index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google Sans">
+    
 </head>
 <body>
     <div id="navbar">
-        <div>
-            <img id="navbarImage" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="">
-        </div>
+        
+       <div id="nav1">
+            <img id="navbarImage1" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="">
 
-        <div>
             <a href="coursePage.html">Online Courses</a>
             <a href="#">Certification</a>
-            <a href="#">Live Training</a>
-            <a href="#">Remote Working</a>
             <a href="#">More</a>
+       </div>
+
+        <div>
+            <button id="navbarSigninBtn1" class="navbarSigninBtn">Sign in</button>
+            <button id="navbarSignupBtn1" class="navbarSignupBtn">Register</button>
+        </div>
+    </div>
+
+    <div id="ssNavbar">
+      <div>
+        <div>
+            <i id="menuIcon" class="fa-solid fa-bars"></i>
+            <img id="navbarImage2" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt="">
+        </div>
+        <div>
+            <button id="navbarSigninBtn2" class="navbarSigninBtn">Sign in</button>
+            <button id="navbarSignupBtn2" class="navbarSignupBtn">Register</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="menuItems">
+        <div><img id="navbarImage3" src="https://lh3.googleusercontent.com/kvtXWUZ756KishzmjWDgAf0AW77QeBSuLbUXDQidstlS2h63BSRrlgm4bU97NPjdF5skHZFKQufqTqGt1UbTO8VV0OB7SqXAz7qCng=-rw" alt=""></div>
+        <div>
+            <h3><a href="coursePage.html">Online Courses</a></h3>
+            <h3><a href="#">Certification</a></h3>
+            <h3><a href="#">Live Training</a></h3>
+            <h3><a href="#">Remote Working</a></h3>
+            <h3><a href="#">Tools & Resources</a></h3>
+            <h3><a href="#">Help & FAQs</a></h3>
+            <h3><a href="#">Feedback</a></h3>
         </div>
 
         <div>
-            <button id="navbarSigninBtn">Sign in</button>
-            <button id="navbarSignupBtn">Register</button>
+            <button id="navbarSigninBtn3" class="navbarSigninBtn">Sign in</button><br>
+            <button id="navbarSignupBtn3" class="navbarSignupBtn">Register</button>
         </div>
     </div>
+
 
     <div id="heading">
         <div>
@@ -135,17 +166,27 @@
     <h2>FAQs</h2>
     <div>
     <hr>
-    <div> 
-        <p class="FAQquestion">Who is Google Digital Garage for?</p>
-        <p>⮟</p>
-    </div>
-    <!-- <p>Everyone. Gain today's most in-demand skills, whether you're growing your business, starting a career, or just want to try something new. We’ve got a range of courses and over 40 hours of learning available to help take you where you need to go. If you’re keen to come and learn, we’re keen to meet you!</p> -->
-    <hr>
+
+
     <div>
-         <p class="FAQquestion">Who provides the courses?</p>
-         <p>⮟</p>
+        <div id="question1" class="questions">
+            <p class="FAQquestion">Who is Google Digital Garage for?</p>
+            <h3><i id="icon1" class="fa-solid fa-angle-down"></i></h3>
+        </div>
+        <div id="ques1" class="q_icons"><p>Everyone. Gain today's most in-demand skills, whether you're growing your business, starting a career, or just want to try something new. We’ve got a range of courses and over 40 hours of learning available to help take you where you need to go. If you’re keen to come and learn, we’re keen to meet you!</p></div>
     </div>
-    <!-- <p>Some of the courses are provided by us, and others from our partner universities or institutions.</p> -->
+
+
+    <hr>
+
+    <div>
+         <div id="question2" class="questions">
+            <p class="FAQquestion">Who provides the courses?</p>
+            <h3 id="icon2"><i class="fa-solid fa-angle-down"></i></h3>
+         </div>
+         <div id="ques2" class="q_icons"><p>Some of the courses are provided by us, and others from our partner universities or institutions.</p></div>
+    </div>
+    
     <hr>
 </div>
 <button id="faqBtn">See all FAQs</button>
@@ -192,6 +233,7 @@
 </footer>
 </body>
 
+<script src="Scripts/navbar.js"></script>
 <script src="Scripts/index.js"></script>
 
 </html>
