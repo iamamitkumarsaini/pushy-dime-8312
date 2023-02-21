@@ -1,36 +1,60 @@
-document.getElementById("navbarImage").addEventListener("click",navbarImageFunc);
-
-function navbarImageFunc(){
-    window.location.href = "index.html"
-};
-
-document.getElementById("navbarSignupBtn").addEventListener("click",navbarSignupFunc);
-
-function navbarSignupFunc (){
-    window.location.href = "signupPage.html"
-};
-
-
-document.getElementById("navbarSigninBtn").addEventListener("click",navbarSigninFunc);
-
-function navbarSigninFunc(){
-    window.location.href = "signinPage.html"
-};
-
-
-
-
-document.getElementById("continueBtn").addEventListener("click",signUpFunction);
-
-
 let signupArr = JSON.parse(localStorage.getItem("signupData")) || [];
+
+let signup = document.getElementById("continueBtn")
+
+let mail = document.getElementById("signinmail");
+let password = document.getElementById("signinpassword");
+
+let eyeicon1 = document.getElementById("eyeicon1");
+let eyeicon2 = document.getElementById("eyeicon2");
+
+eyeicon1.addEventListener("click",showPasswordFunc);
+eyeicon2.addEventListener("click",hidePasswordFunc);
+
+function showPasswordFunc(){
+    eyeicon1.style.display = "none";
+    eyeicon2.style.display = "block"
+
+    password.type = "text";
+}
+
+function hidePasswordFunc(){
+    eyeicon1.style.display = "flex";
+    eyeicon2.style.display = "none"
+
+    password.type = "password";
+}
+
+
+mail.addEventListener("input",checkForText)
+password.addEventListener("input",checkForText)
+
+function checkForText(){
+    if(mail.value !=="" && password.value !==""){
+        signup.disabled = false
+        signup.style.backgroundColor = "#1a73e8"
+        signup.style.color = "#fff"
+    }
+    else{
+      signup.disabled = true;
+        signup.style.backgroundColor = "rgba(192,192,192,0.7)"
+        signup.style.color = "rgba(150,150,150,1)"
+    }
+}
+
+
+
+
+
+signup.addEventListener("click",signUpFunction);
 
 function signUpFunction(){
     let signupObj = {
-        mail:document.getElementById("signinmail").value,
-        password:document.getElementById("signinpassword").value
-    };
+        mail:mail.value,
+        password:password.value
+    }
 
+    let flag = false;
 
   if (signupObj["mail"] == ""  || signupObj["password"] == "" ){
     alert("Fill all the input fields")
@@ -38,12 +62,27 @@ function signUpFunction(){
   }  
 
   else{
-    signupArr.push(signupObj);
-    document.getElementById("continueBtn").style.backgroundColor = "#1a73e8"
-    window.location.href = "signinPage.html"
-    document.getElementById("signinmail").value = "";
-    document.getElementById("signinpassword").value = "";
-  }
 
-  localStorage.setItem("signupData", JSON.stringify(signupArr))
+    signupArr.forEach((elem) => {
+      if(elem.mail == signupObj.mail){
+        return flag = true;
+      }
+    })
+
+    if(flag){
+      alert("User Already Exist, Please Login")
+    }
+    else{
+      signupArr.push(signupObj);
+      localStorage.setItem("signupData", JSON.stringify(signupArr))
+      document.getElementById("signinmail").value = "";
+      document.getElementById("signinpassword").value = "";
+      setTimeout(() => {
+        window.location.href = "signinPage.html"
+      },1200)
+
+      flag = false;
+    }
+
+  }
 }

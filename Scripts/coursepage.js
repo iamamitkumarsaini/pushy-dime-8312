@@ -1,23 +1,3 @@
-document.getElementById("navbarImage").addEventListener("click",navbarImageFunc);
-
-function navbarImageFunc(){
-    window.location.href = "index.html"
-};
-
-
-document.getElementById("navbarSignupBtn").addEventListener("click",navbarSignupFunc);
-
-function navbarSignupFunc (){
-    window.location.href = "signupPage.html"
-};
-
-
-document.getElementById("navbarSigninBtn").addEventListener("click",navbarSigninFunc);
-
-function navbarSigninFunc(){
-    window.location.href = "signinPage.html"
-};
-
 let coursesArr = [
     {
       name: "Fundamentals of digital marketing",
@@ -1689,12 +1669,16 @@ let coursesArr = [
   ];
 
 
+  let filterIcon = document.getElementById("filterIcon");
+  let leftContainer1 = document.getElementById("leftContainer1")
+  
+
   allCoursesFunc(coursesArr)
 
 
   function allCoursesFunc(coursesArr){
 
-  document.getElementById("rightContainer").innerHTML = ""
+  document.getElementById("container").innerHTML = ""
   
 
   coursesArr.forEach(function (elem){
@@ -1733,10 +1717,10 @@ let coursesArr = [
     upperChildDiv.append(pictures,heading,para);
 
     parentdiv.append(upperChildDiv,bolowChildDiv,para5)
-    document.getElementById("rightContainer").append(parentdiv);
+    document.getElementById("container").append(parentdiv);
 
 
-    document.querySelector("#result").innerText = coursesArr.length;
+    document.querySelector("#result").innerText = `Results: ${coursesArr.length} courses`;
     });
 };
 
@@ -1784,10 +1768,6 @@ function categoriesFunc3 (event){
   };
 
 };
-
-
-
-
 
 
   function filterFunc1 (){
@@ -2493,6 +2473,110 @@ document.querySelector("#resetformat").addEventListener("click",resetFunc);
 function resetFunc (){
   allCoursesFunc (coursesArr);
 };
+
+
+filterIcon.addEventListener("click",showFilterFunc);
+let body = document.querySelector("body");
+
+let closeBar = document.getElementById("closeBar")
+
+
+function showFilterFunc(){
+  const {scrollTop} = document.documentElement;
+
+  body.style.overflow = "hidden"
+  leftContainer1.style.display = "block"
+  leftContainer1.style.position = "absolute"
+  leftContainer1.style.top=`${scrollTop-71}px`
+  leftContainer1.style.left=0
+  leftContainer1.style.width="270px"
+  leftContainer1.style.height="100vh"
+  leftContainer1.style.overflowY = "scroll"
+  leftContainer1.style.backgroundColor = "#fff";
+  leftContainer1.style.zIndex="6"
+}
+
+
+
+closeBar.addEventListener("click",hideFilterFunc);
+
+
+function hideFilterFunc(){
+  const {scrollTop} = document.documentElement;
+
+  if(screen.width<=1000){
+    body.style.overflow = "auto";
+    leftContainer1.style.display = "none"
+    leftContainer1.style.position = "absolute"
+    leftContainer1.style.top=`${scrollTop-70.4}px`
+    leftContainer1.style.left=0
+    leftContainer1.style.width="270px"
+    leftContainer1.style.height="100vh"
+    leftContainer1.style.overflowY = "scroll"
+    leftContainer1.style.backgroundColor = "#fff";
+    leftContainer1.style.zIndex="6"
+  }
+
+};
+
+
+window.addEventListener("click",hidePlease)
+
+function hidePlease(event){
+  const {scrollTop} = document.documentElement;
+
+  if(event.target.id !== "leftContainer1" && event.target.id !=="filterIcon"){
+    body.style.overflow = "auto";
+    leftContainer1.style.display = "none";
+    leftContainer1.style.position = "absolute"
+    leftContainer1.style.top=`${scrollTop-70.4}px`
+    leftContainer1.style.left=0
+    leftContainer1.style.width="270px"
+    leftContainer1.style.height="100vh"
+    leftContainer1.style.overflowY = "scroll"
+    leftContainer1.style.backgroundColor = "#fff";
+    leftContainer1.style.zIndex="6"
+
+  }
+
+  else if(event.target.id == "leftContainer1"){
+    body.style.overflow = "auto";
+    leftContainer1.style.display = "none";
+    leftContainer1.style.position = "absolute"
+    leftContainer1.style.top=`${scrollTop-70.4}px`
+    leftContainer1.style.left=0
+    leftContainer1.style.width="270px"
+    leftContainer1.style.height="100vh"
+    leftContainer1.style.overflowY = "scroll"
+    leftContainer1.style.backgroundColor = "#fff";
+    leftContainer1.style.zIndex="6"
+
+  }
+}
+
+window.onresize = function(){
+  if(screen.width>1000){
+    body.style.overflow = "auto";
+    leftContainer1.style.display = "block";
+    leftContainer1.style.position = "static"
+    leftContainer1.style.top="80px"
+    leftContainer1.style.left="auto"
+    leftContainer1.style.width="24%"
+    leftContainer1.style.height="auto"
+    leftContainer1.style.overflowY = "hidden"
+    leftContainer1.style.backgroundColor = "transparent";
+    leftContainer1.style.zIndex="0"
+  }
+  else{
+    leftContainer1.style.display = "none"
+    body.style.overflow = "auto";
+  }
+}
+
+
+
+
+
 
 
 
