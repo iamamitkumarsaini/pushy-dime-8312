@@ -3,6 +3,12 @@ body{
     padding: 0;
 }
 
+#logo{
+    border-radius: 50px;
+    border: 1px solid red;
+    background-color: red;
+}
+
 #navbar{
     display: flex;
     width: 99.6%;

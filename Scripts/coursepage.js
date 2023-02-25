@@ -2525,7 +2525,8 @@ window.addEventListener("click",hidePlease)
 function hidePlease(event){
   const {scrollTop} = document.documentElement;
 
-  if(event.target.id !== "leftContainer1" && event.target.id !=="filterIcon"){
+  if(event.target.id !== "leftContainer1" && event.target.id !=="filterIcon" && screen.width<=1000){
+    console.log("amitsaini123456")
     body.style.overflow = "auto";
     leftContainer1.style.display = "none";
     leftContainer1.style.position = "absolute"
@@ -2539,7 +2540,8 @@ function hidePlease(event){
 
   }
 
-  else if(event.target.id == "leftContainer1"){
+  else if(event.target.id == "leftContainer1"){          // This condition is Not Working
+    console.log("amitsaini7890")
     body.style.overflow = "auto";
     leftContainer1.style.display = "none";
     leftContainer1.style.position = "absolute"
